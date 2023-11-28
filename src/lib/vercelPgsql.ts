@@ -9,6 +9,7 @@ export const getAssistantId = async (): Promise<string | undefined> => {
   }
 };
 
+
 export const updateAssistantId = async (assistantId: string) => {
   await sql`INSERT INTO admin (id) VALUES (${assistantId});`;
   return;

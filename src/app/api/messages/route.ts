@@ -5,7 +5,7 @@ const getCorsHeaders = (request: NextRequest): NextResponse => {
   const nextResponse = NextResponse.json({ isLogged: true }, { status: 200 });
   const allowedOrigins = [
     "http://localhost:3000",
-    "https://chatbot-upcschool.vercel.app",
+    "https://chatbot-pelfsollution.vercel.app",
   ];
   const origin = request.headers.get("origin");
 
